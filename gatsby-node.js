@@ -22,11 +22,11 @@ exports.sourceNodes = ({ actions, reporter }) => {
   if (callCount > 0) {
     throw new Error(`we didn't call activity.end(), oops`)
   } else {
-    setTimeout(() => {
-      fetch(REFRESH_WEBHOOK, {
-        method: `POST`,
-      })
-    }, 15000)
+    // setTimeout(() => {
+    //   fetch(REFRESH_WEBHOOK, {
+    //     method: `POST`,
+    //   })
+    // }, 15000)
   }
 
   activity.end()
