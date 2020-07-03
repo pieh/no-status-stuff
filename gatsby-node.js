@@ -6,9 +6,9 @@ const REFRESH_WEBHOOK =
   process.env.REFRESH_WEBHOOK || `http://localhost:8000/__refresh`
 
 exports.sourceNodes = ({ actions, reporter }) => {
-  const activity = reporter.activityTimer(`SET_STATUS repro`)
+  // const activity = reporter.activityTimer(`SET_STATUS repro`)
 
-  activity.start()
+  // activity.start()
 
   // just so gatsby doesn't complain about source plugin not doing anything
   actions.createNode({
@@ -20,7 +20,16 @@ exports.sourceNodes = ({ actions, reporter }) => {
   })
 
   if (callCount > 0) {
-    throw new Error(`we didn't call activity.end(), oops`)
+    // throw new Error(`we didn't call activity.end(), oops`)
+    var cur = 0 // 167772160
+    var bcast = 184549375
+    var addresses = []
+    while (cur <= bcast) {
+      cur += 1
+      addresses.push(cur)
+    }
+    addresses.length
+    addresses
   } else {
     // setTimeout(() => {
     //   fetch(REFRESH_WEBHOOK, {
@@ -29,7 +38,7 @@ exports.sourceNodes = ({ actions, reporter }) => {
     // }, 15000)
   }
 
-  activity.end()
+  // activity.end()
 
   callCount++
 }
