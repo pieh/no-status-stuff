@@ -5020,10 +5020,10 @@ gatsby-telemetry@^1.3.16, gatsby-telemetry@^1.3.18:
     node-fetch "2.6.0"
     uuid "3.4.0"
 
-gatsby@2.23.15-finish-plugin-activities.12:
-  version "2.23.15-finish-plugin-activities.12"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.23.15-finish-plugin-activities.12.tgz#ab7029fb9e1f9cb6f8a0dab07f3fb02a4b81baf4"
-  integrity sha512-7GnIdDtZXI9gxnwbm5Q0roYM4pBnyLudox1uuYvw1akPyKDk2KMtMdSDEZVlfvIH7Dfbs0j/IOpg0fmWpEBLNg==
+gatsby@2.23.15-finish-plugin-activities.15:
+  version "2.23.15-finish-plugin-activities.15"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.23.15-finish-plugin-activities.15.tgz#88079149089bf22e0a1cff949bf099148f8887a9"
+  integrity sha512-rAZJWgPvX/8Ne9LUgp3rzs8OhD8bxnUUlv4GteuLl3Aj5nf16CdPK443lHmHpyHqjH8gchGLnqyK3tF2d2qItQ==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/core" "^7.10.3"

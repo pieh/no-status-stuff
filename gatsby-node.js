@@ -6,6 +6,7 @@ const REFRESH_WEBHOOK =
   process.env.REFRESH_WEBHOOK || `http://localhost:8000/__refresh`
 
 exports.sourceNodes = ({ actions, reporter }) => {
+  console.log(`source nodes`)
   const activity = reporter.activityTimer(`SET_STATUS repro`)
 
   activity.start()
@@ -22,11 +23,11 @@ exports.sourceNodes = ({ actions, reporter }) => {
   if (callCount > 0) {
     throw new Error(`we didn't call activity.end(), oops`)
   } else {
-    setTimeout(() => {
-      fetch(REFRESH_WEBHOOK, {
-        method: `POST`,
-      })
-    }, 15000)
+    // setTimeout(() => {
+    //   fetch(REFRESH_WEBHOOK, {
+    //     method: `POST`,
+    //   })
+    // }, 15000)
   }
 
   activity.end()
